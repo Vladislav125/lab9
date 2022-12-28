@@ -1,0 +1,7 @@
+<%= form_with url: "example/show", method: :post do |form| %>
+  <%= form.label :input_value, 'Введите число, для которого нужно найти факториал: ', :class => 'label-form' %><br>
+  <%= form.text_field :input_value, value: '25' %><br/><br/>
+  <%= form.submit 'Вывести результат', class: 'btn btn-warning' %>
+<% end %>
+<br>
+<div id='show_container'></div>

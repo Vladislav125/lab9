@@ -1,0 +1,5 @@
+<% if @error %>
+  <%= turbo_stream.update 'show_container', partial: 'error' %>
+<% else %>
+  <%= turbo_stream.update 'show_container', partial: 'result' %>
+<% end %>
